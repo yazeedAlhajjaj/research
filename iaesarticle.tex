@@ -1,0 +1,164 @@
+\documentclass{iaesarticle}
+
+%%required package. add for your convenient, but do not remove the initial
+\setlength{\headsep}{0.15in}
+\usepackage{amsmath, amsfonts, amssymb, float, fancyhdr}
+\usepackage[figuresright]{rotating}
+\usepackage{authblk, graphicx, indentfirst, lastpage, lipsum}
+\usepackage{pifont}
+\renewcommand{\Authsep}{, }
+\renewcommand{\Authand}{, }
+\renewcommand{\Authands}{, }
+\setlength{\affilsep}{0cm}
+\renewcommand\Authfont{\normalsize}
+\renewcommand\Affilfont{\fontsize{8}{10}\mdseries}
+\makeatletter
+\renewcommand{\@biblabel}[1]{[#1]\hfill}
+\renewcommand\AB@authnote[1]{\textsuperscript{\normalfont\bfseries#1}}
+\makeatother
+\usepackage[font=normalsize]{subfig, caption}
+\usepackage{epstopdf}
+\usepackage[left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm, includehead, includefoot]{geometry}
+\usepackage[justification=centering]{caption}
+\captionsetup{labelsep=period}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\titleformat{\section}
+{\normalfont\normalsize\bfseries\uppercase}{\thesection}{1.7em}{}
+\titleformat{\subsection}
+{\normalfont\normalsize\bfseries}{\thesubsection}{.95em}{}
+\titleformat{\subsubsection}
+{\bfseries}{\thesubsubsection}{.2em}{}
+\titlespacing*{\section}{0cm}{0.7cm}{0cm}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{hyperref,graphicx}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[style=ieee]{biblatex}
+\usepackage{pgfplots}
+
+\usepgfplotslibrary{groupplots}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning}
+\addbibresource{references.bib}
+\defbibheading{bibintoc}[\bibname]{%
+	\section*{REFERENCES} % Title of the bibliography
+	\addcontentsline{toc}{section}{REFERENCES} % Adds "REFERENCES" to TOC
+}
+%%leave copyright info to the editor
+\CopyrightLine[]{}{\textit{This is an open access article under the \textcolor{blue}{\underline{CC BY-SA}} license.}
+\vspace{.5em}}
+
+%%author
+\author[1]{\bfseries Yazeed Alhajjaj}
+\author[2]{\bfseries Mohammad Qatawneh}
+
+
+%%author's affiliation
+\affil[1]{Department of Computer Science, University of Jordan Amman, Jordan}
+\affil[2]{Department of Computer Science, University of Jordan Amman, Jordan}
+
+
+%%title and shortitle (for footer)
+\title{Hyperledger Fabric BC Framework To Ensure Trust In Vehicle Market}
+\shorttitle{Hyperledger Fabric BC Framework To Ensure Trust In Vehicle Market}
+\raggedbottom
+
+%%starting
+\begin{document}
+\setcounter{page}{1}
+
+%%indentation. do not change
+\setlength{\parindent}{1.27cm}
+
+%%header and footer setting. do not change
+\pagestyle{fancy}
+\fancyhfoffset{0cm}
+
+%%journal info
+\journalname{Indonesian Journal of Electrical Engineering and Computer Science}
+\journalshortname{Indonesian J Elec Eng \& Comp Sci}
+\journalhomepage{http://ijeecs.iaescore.com}
+\vol{99}
+\no{1}
+\months{Month}
+\years{2022}
+\issn{2502-4752}
+\DOI{10.11591}
+\pagefirst{1}
+\pagelast{1x}
+
+%%build title
+\maketitle
+
+%%border setting. do not change
+\hrule
+\vspace{.1em}
+\hrule
+\vspace{.5em}
+\noindent
+\parbox[t][][s]{0.315\textwidth}{%
+\textbf{Article Info}
+\vspace{.5em}
+\hrule
+\vspace{.5em}
+\begin{history}
+\vspace{.5em}
+
+%%article info. editor's privilege
+Received month dd, yyyy
+
+Revised month dd, yyyy
+
+Accepted month dd, yyyy
+
+\vspace{.7em}
+\end{history}
+\vspace{.5em}
+\hrule
+\vspace{.5em}
+\begin{keyword} 
+\vspace{.5em}
+%%write keyword here. separate by \sep
+Blockchain \sep Hyperledger \sep Fraud \sep Counterfeiting \sep Vehicle Market
+\vspace{.5em}
+\end{keyword}
+\vspace{\fill}
+}
+\parbox{0.020\textwidth}{\hspace{0.5em}}
+\parbox[t][][s]{0.65\textwidth}{%
+\begin{abstract}
+\vspace{.3em}
+%% Text of abstract
+In this research, we present the development and evaluation of Blockchain (BC) framework based on HyperLedger (HL) Fabric designed to ensure trust, integrity, and prevent counterfeiting in the vehicle market. The evaluation focuses on four key aspects: scalability, latency, security, and throughput. Scalability and latency were verified through HL Caliper benchmark on a single machine deployment, results demonstrate the framework’s feasibility to handle different numbers of configurations with the capacity to scale by adding to organizations with a server for each one. However, during evaluation network bandwidth was a limitation that affected the overall performance. Even though the performance was poor on Caliper, the framework achieved a throughput of about 2200 Transaction Per Second (TPS) when benchmarked through HL Tape tool. Furthermore, the framework uses several security methods to prevent attacks such as Denial Of Service (DoS). Finally, the results emphasize the importance of network bandwidth on the framework performance and the impact of adding additional peers to the organizations as we had a 32.2\% increase in throughput after adding a second peer. For future research, we might explore the use of hardware security keys and the implementation of other technologies.
+\end{abstract}
+}
+
+\vspace{.5em}
+\hrule
+\vspace{.1em}
+\hrule
+
+
+%% main text
+
+\section{Introduction}
+\input{introduction}
+\section{Method}
+\input{method}
+
+\section{Results and Discussion}
+\input{results-and-discussion}
+
+\section{Conclusion}
+\input{conclusion}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}
+
+%%
+%% End of file `iaesarticle.tex'. 

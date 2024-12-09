@@ -1,0 +1,104 @@
+The vehicle industry is one of the biggest in the world with billions of revenues every year and this makes it preferable for fraudulent
+parties and individuals to conduct their suspicious activities. These activities can be observed through several types of known methods such
+as: copycats who create counterfeited replacement parts and sell them as originals, dealers who modify vehicles to hide known malfunctions;
+for example: adding an electronic resistance to manipulate vehicle unit to register missing parts like the air bag which can endanger
+people's life. Also, modifying the vehicle’s odometer to show a lower number and hiding relative information is from buyers to increase
+vehicle value at the cost of the safety of others. Aside from endangering peoples, these acts lead to huge financial losses which emphasizes
+the need for creating solutions to eliminate these challenges.
+
+For an individual to protect himself from previous frauds when purchasing a vehicle, in the traditional way, he needs to acquire information
+about the vehicle history. By nature, vehicles history is segregated into several categories, namely: accidents records, maintenance logs,
+exports and imports, and ownership records and some of this information is stored by country and others by shop or dealer which makes the
+mission difficult and sometimes impossible to accomplish. To overcome this issue, several solutions were raised, such as Carseer and Carfax
+which are companies that collect vehicle information's across different countries and sell them as a report to individuals. Even though
+these solutions are somewhat effective, they have two major drawbacks, for instance: the adaptation from related parties and the fact they
+are a centralized organization, and their databases could be altered or hacked. To conclude, the is a critical need for a better solution to
+ensure trust and integrity between buyers and sellers.
+
+Blockchain is a distributed, decentralized, and immutable digital ledger that is used to store data and transactions in a chain of connected
+blocks. Each block is hashed to ensure immutability and is connected to the chain using the hash of its previous block. Additionally, to
+ensure decentralization and distribution, all nodes in a BC network have a copy of the ledger and depending on the network type, either all
+nodes contribute to transactions and block validation or only a set of selected nodes. This characteristic makes it an efficient candidate
+for systems that facilitate interactions and transactions between trustless parties without the need for centralized entities to manage the
+system. For example: E-voting
+\cite{AlMaaitah2021}\cite{al2022blockchain}, drugs \cite{al2022blockchain}\cite{AlShorman2018}, health insurance \cite{Alhasan2021}, internet of things
+\cite{Qatawneh2020}, and used
+vehicle market [8].
+Since the release of Bitcoin in 2009, blockchain has gained huge popularity among researchers in the academic spectrum. Consequently,
+there is a plethora of research volume about it is implementation in the auto industry. The research in this subject can be categorized in 4
+categories namely: vehicle registration and secure purchase, tracking used vehicle history, securing the supply chain, and preventing
+counterfeiting. In \cite{Tran2021-fh} proposed a vehicle registration system using BC to improve the process of registering
+vehicles and facilitate the interactions and communications between the vehicle owner and the registration office. Even though the whole is
+done using the system, after the registration office approves the request, the owner is required to bring the vehicle for a physical
+inspection to complete the process and receive the license plate. In another research, \cite{Khandelwal2021-to} proposed a BC system
+to secure the order of new vehicles using Ethereum network. The system uses two smart contracts to facilitate the operation, one between the
+customer and the dealer called CustomerDealer and one between the dealer and manufacturer called DealerManufacturer, the smart contracts
+handle the information communication between parties as well as the payment of the vehicle price.
+
+
+\cite{Yu2021-yq}
+proposed a BC framework to prevent fraud in the used vehicle market, also it is designed to be led by the government with other
+departments to add required information to the ledger. Although this design decision decreases the framework decentralization, it can
+enforce regulations and rules on stakeholders to ensure network integrity. Furthermore, it includes the intermediaries who facilitate the
+buying and selling between the owner and the buyer for a predetermined commission. \cite{Zhang2021-jo} proposed a BC system
+based on HL consists of six layers to trace and log vehicle history. The layers are user layer which contains the UI, application layer
+which contains the system portal, contract layer containing the smart contracts, network layer includes the network protocols, data layer,
+and the acquisition layer. Finally, it provides users with the ability to obtain vehicle reports using a QR code attached to the vehicle
+which can enhance the system privacy by limiting the report access to only potential buyers.
+
+
+\cite{Yahiaoui2020-gp}
+proposed a supply chain model for the automotive sector using BC to coordinate the tracking of automotive products. As in a
+traditional supply chain model, logistics information is only available to the entities involved in the actual process without providing the
+end-user with a method to validate the origin of the product. But with the implementation of a decentralized ledger, the authors can provide
+the end-users with the ability to validate all information's relevant to the product. The model uses smart contracts to facilitate the
+transactions between stakeholders with the aim of overcoming data barriers and improving the traditional supply chain system in several
+aspects such as security, information sharing, and system integration. \cite{Lu2019-wk} Proposed a supply chain model based on
+HL fabric BC to prevent the vehicle parts counterfeiting. The model introduced the concept of a self-aware vehicle with traceable parts,
+with the vehicle itself as an independent stakeholder that can validate the parts mounted on it using a unique identifier for each part and
+add transactions to the chain to report the state of parts. Even though malicious parties might try to duplicate the id from original parts
+or use the id of parts from salvaged or recalled vehicle, the supplier is the only entity that has the privilege to add new parts to the
+network such acts are prevented. Authors also stated some challenges that can face the model such as the data privacy and which information
+should be considered as private to protect stakeholders from other competitors, and the communication security in the network which can be
+solved using TLS to secure all communications.
+
+
+\cite{Reimers2019-el}
+proposed a supply chain prototype that integrate BC with IoT to provide end users with a report for vehicle shipments. Their goal is
+to provide a PoC for the integration of IoT devices such as raspberry Pi devices with NFC tags and sensors that is attached to the vehicle,
+the raspberry Pi’s are attached to MQTT using Node-Red to facilitate the communication between IoT devices and the ledger. Sensors and IoT
+devices data are uploaded to the chain and when the vehicle arrives, the users can access the vehicle report to validate the vehicle status.
+\cite{Ada2021-fn} proposed a BC supply chain architecture for an existing organization after identifying several challenges it faces
+with traditional supply chain. Authors stated that it suffered from maintaining the Inventory Quality Ratio (IQR), so they apply a
+multi-layered architecture with HL to connect various stakeholders. The prototype was simulated with Anylogic and the simulation results
+show that it can bring a significant value to the organization as the numbers shows that the maximum limit of mean daily costs and mean
+waiting time for factory, wholesaler, and retailer after employing the BC has significantly decreased with minimum retailer stock level and
+maximum retailer stock level that helps to measure IQR. \cite{Zafar2022-uk} proposed a BC system to manage supply chain for automotive
+industry using HL fabric. The system addresses three stages of the supply chain: manufacturing, sales, and maintenance and each vehicle is
+identified using a unique identifier which is used on all transactions on the system. Finally, the authors stated that the system provides
+better access control, transparency, encryption, and immutability over traditional supply chains and due to the permissioned BC, buyers can
+only view the information on the ledger.
+
+In \cite{Saldamli2020-zk}
+proposed a model to secure vehicle data by integrating Ethereum BC and OpenXC devices mounted on the vehicle. OpenXC uses the OBD
+II port on the vehicle to read and record data for the control unit, and the authors analyzed the data to detect several events such as:
+driving behavior, vehicle maintenance, and odometer fraud check. \cite{Wang2020-tm} proposed a trust-driven framework for vehicle
+product and service system (PSS) to improve trust and transparency among stakeholders by reducing the risk of scams and fraud. The framework
+can integrate applications, and it contains three applications: Decentralized vehicle ledger to store vehicle data, automated valuation
+which uses the data from the ledger to evaluate vehicle price, and insurance recommendations which uses the data from the ledger to provide
+customized insurance policies based on the individual clients' requirements. \cite{Na2021-tc} proposed a lightweight BC
+system that integrates sensors and IoT devices to vehicle to collect and protect vehicle image data from being forged. Each vehicle is a
+node that encrypts images and creates transactions to upload them to an InterPlanet File System (IPFS) which is a distributed storage
+system.
+
+In this research, we present a new BC framework based on Hyperledger (HL) fabric to ensure trust and prevent common counterfeiting and fraud
+methods in the vehicle market. Hyper-ledger Fabric is a permissioned BC framework developed for enterprise use. It provides a modular and
+scalable architecture that allows organizations to build private, secure, and customizable BC networks, enabling trusted transactions and
+chaincodes execution within a business network. The framework will act as a log to store momentous events in the vehicle life cycle and
+provide it to potential buyers in a report-form. This ensures that the buyer is fully informed and aware of the vehicle's real status to
+prevent malicious parties from taking advantage of buyers for their own benefit.
+
+The rest of the paper will be structured as follows: the Method section will explain the framework architecture and methods,
+Results and discussion section will describe our evaluation results, and
+finally, the Conclusion section will discuss the results and the potentials for future research.
+

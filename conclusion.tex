@@ -1,0 +1,20 @@
+The automotive industry is one of the biggest in the world, which increases the importance of ensuring integrity and trust in the vehicle
+market. In this research, we presented a new framework based on HL fabric BC to record and secure all events in the vehicle lifecycle to
+ensure trust between sellers and buyers in the market. Based on the evaluation results, our framework could provide significant value to the
+market.
+
+The framework functionality was assessed using manual testing and HL Explorer. Results showed that all test scenarios were successfully
+executed with the framework operating without any critical issues. This demonstrates that the integration between framework parts is
+reliable. Additionally, scalability was tested using HL caliper with a variation of organizations. Results show a potential for scaling by
+either adding a new server for each organization or adding new peers to an organization. However, the framework gained a significant spike
+when additional peers were added. Furthermore, latency was measured using HL caliper, although it should be noted that it was not intended
+for single-machine benchmarking. Despite that, the results provided valuable insight. Latency was relatively high, which is explained by the
+deployment on a single machine, also, network bandwidth was a limitation that caused the high latency and affected the overall performance,
+nevertheless, network bandwidth should be taken into consideration when deploying to a real network. Finally, several security measures were
+implemented, including TLS encryption, rate controller, and the use of spring security and JWT to handle authorization and authentication.
+Despite these measures providing adequate protection, continuous improvements are essential to maintaining network integrity.
+
+In future research, we would use security keys such as yubikey to store user certificates and explore the impact of using other languages
+such as Go language and Node JS and databases such as level DB. OpenSearch can also be used to store and query images, it has the ability to
+handle tremendous amounts of data and perform complex queries which can enhance image retrieval. Furthermore, Machine Learning (ML) and
+Artificial Intelligence (AI) could be implemented to fairly estimate vehicle prices based on information retrieved from the framework.
